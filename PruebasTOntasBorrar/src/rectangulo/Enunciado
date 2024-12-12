@@ -1,0 +1,14 @@
+Con las clases Rectángulo y la clase de apoyo Ejecutar para realizar pruebas, además de Punto y Círculo de la carpeta Clases de ejemplo, adaptar a las especificaciones del todo y corregir los errores encontrados en los ejemplos de clase.
+
+Problemas encontrados:
+
+ Código duplicado (convertir en métodos, estáticos o no)
+ Ausencia de control de errores (excepciones o condicionales)
+ No usa métodos ya existentes, los redefine en la clase Rectángulo
+ No se ha leído la documentación de la clase Teclado, así que hay métodos más afines
+Soluciones propuestas:
+
+ Crear funciones para evitar código duplicado
+ Modificar leerDatos() para cumplir especificaciones
+ Usar los métodos adecuados para cada tipo
+ Buscar un método para realizar conversiones seguras
