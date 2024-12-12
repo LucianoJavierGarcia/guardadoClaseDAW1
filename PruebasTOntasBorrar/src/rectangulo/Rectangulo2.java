@@ -59,13 +59,17 @@ public class Rectangulo2 {
 		public void DatosDouble() {
 			// Comprimit esto para una nueva funcion que haga ambas
 			do {
+					double alturaAnterior = this.altura;
+					
 					Pantalla.escribirString("Indica el nuevo valor de la altura: ");
 					
 					String alturaNueva = Teclado.leerString();
 					
 					if (alturaNueva.equals("")) {
+					
+						  this.altura = alturaAnterior;
 						
-					}
+					 }else 
 					
 					if (!alturaNueva.isEmpty()) {
 					
@@ -109,7 +113,8 @@ public class Rectangulo2 {
 		
 		
 		public void cambiarDatos() {
-			
+			DatosDouble();
+			DatosInt();
 			this.centro.leerDatos();
 			
 			
