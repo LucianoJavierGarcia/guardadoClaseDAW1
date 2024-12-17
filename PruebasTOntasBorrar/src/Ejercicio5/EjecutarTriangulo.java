@@ -28,11 +28,22 @@ public class EjecutarTriangulo {
 		comprobarAreaMayor(arrayTriangulos);
 		*/
 		
+		
+		
+		
+		
+	}
+	//Cosa para buscar "widening casting" y "Stortening casting". Tambien buscar los problemas que puede dar
+	public static void crearTeatroConFunciones () {
 		Teatro nuevoTeatro = new Teatro ("Teatro LJ","Plaza castilla");
 		nuevoTeatro.mostrarDatos();
 		
-		
-		
+		for(int i =0; i<4;i++) {
+			nuevoTeatro.setFunciones(new Funcion(), i);
+			nuevoTeatro.getFunciones()[i].setNombre("El capitan america contra los taxistas de Atocha");
+			nuevoTeatro.getFunciones()[i].setPrecios(Math.round(Math.random()*10));
+			
+		}
 	}
 	
 	public static void comprobarAreaMayor(Triangulo [] array) {
