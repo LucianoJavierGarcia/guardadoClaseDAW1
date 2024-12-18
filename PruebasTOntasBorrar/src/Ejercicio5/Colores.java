@@ -1,5 +1,11 @@
 package Ejercicio5;
 
+/*
+ * Buscar video de cadenas y nodos  en Java
+ * buscar mas algoridmos de estrucuta de datos
+ * 
+ */
+
 class Colores {
 public static void main(String [] args) {
 	Lista colores = new Lista();
@@ -41,7 +47,7 @@ primero=null;
 public void imprimir() {
 for( Nodo aux=primero; aux.coger()!= null;aux = aux.coger()) {
 System.out.print(aux.color()+ (""));
-}
+ }
 }
 
 public void incluir(String cadena) {
