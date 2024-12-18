@@ -53,9 +53,9 @@ public class Teatro {
 	public void llenarFunciones() {
 		for(int i =0; i<4;i++) {
 			
-			this.Teatro.setFunciones(new Funcion(), i);
-			this.nombre.getFunciones()[i].setNombre(Teclado.leerString("Di el nombre de la funcion"));
-			nuevoTeatro.getFunciones()[i].setPrecios(Teclado.leerFloat("Di el precio de la fucion"));
+			//this.Teatro.setFunciones(new Funcion(), i);
+			//this.nombre.getFunciones()[i].setNombre(Teclado.leerString("Di el nombre de la funcion"));
+			//nuevoTeatro.getFunciones()[i].setPrecios(Teclado.leerFloat("Di el precio de la fucion"));
 			
 		}
 	}

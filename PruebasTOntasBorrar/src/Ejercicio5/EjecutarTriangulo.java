@@ -1,6 +1,7 @@
 package Ejercicio5;
 
 import daw.com.Pantalla;
+import daw.com.Teclado;
 
 public class EjecutarTriangulo {
 
@@ -37,11 +38,12 @@ public class EjecutarTriangulo {
 	public static void crearTeatroConFunciones () {
 		Teatro nuevoTeatro = new Teatro ("Teatro LJ","Plaza castilla");
 		nuevoTeatro.mostrarDatos();
-		
+		//(Math.round(Math.random()*10)) Esto solo seria para probar la funcionalidad
+		//podemos modularlo mas.
 		for(int i =0; i<4;i++) {
-			nuevoTeatro.setFunciones(new Funcion(), i);
-			nuevoTeatro.getFunciones()[i].setNombre("El capitan america contra los taxistas de Atocha");
-			nuevoTeatro.getFunciones()[i].setPrecios(Math.round(Math.random()*10));
+			//nuevoTeatro.setFunciones(new Funcion(), i);
+			nuevoTeatro.getFunciones()[i].setNombre(Teclado.leerString("Di el nombre de la funcion"));
+			nuevoTeatro.getFunciones()[i].setPrecios(Teclado.leerFloat("Di el precio de la fucion"));
 			
 		}
 	}
